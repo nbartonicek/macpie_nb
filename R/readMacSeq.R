@@ -185,7 +185,7 @@ readMacSeq <- function(
   # directories  have the same features files.
 
   list_of_data <- list()
-  for (j in seq_along(x = full_data[[1]])) {
+  for (j in seq_along(full_data[[1]])) {
     list_of_data[[j]] <- do.call(cbind, lapply(X = full_data, FUN = `[[`, j))
   }
   names(x = list_of_data) <- names(x = full_data[[1]])
