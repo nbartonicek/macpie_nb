@@ -1,15 +1,18 @@
 
 #' Load in data from Mac-seq experiments
 #'
-#' This functions is a derivative from Read10X() function from the Seurat package.
+#' This functions is a derivative from Read10X function from the Seurat package.
 #' Enables easy loading of sparse data matrices provided by 10X genomics.
 #' @author Mark Li, \email{justdont}
 #'
-#' @param data.dir Directory containing the matrix.mtx, genes.tsv (or features.tsv), and barcodes.tsv
-#' files provided by nextflow pipeline using Starsolo.
-#' I removed the functionality for reading in several data directories as the original Read10X()
-#' This is to allow me read in the metadata label matching to the Macseq plate with minimum confusion.
-#' Next version will consider open opssibilities to integrate other omics data
+#' @param data.dir Directory containing the matrix.mtx, genes.tsv
+#' (or features.tsv), and barcodes.tsv files provided by nextflow
+#' pipeline using Starsolo.
+#' Functionality for reading several data directories was removed
+#' to allow reading in the metadata label matching to the Macseq
+#' plate with minimum confusion.
+#' Next version will consider integration of other modalities.
+#'
 #' @param label.dir Directory containing the matching metadata file in csv format.
 #' @param gene.column Specify which column of genes.tsv or features.tsv to use for gene names; default is 2
 #' @param cell.column Specify which column of barcodes.tsv to use for cell names; default is 1
