@@ -51,8 +51,8 @@ readMacSeq <- function(
 ) {
 
   full_data <- list()
-  has_dt <- requireNamespace("data.table", quietly = TRUE)
-    && requireNamespace("R.utils", quietly = TRUE)
+  has_dt <- requireNamespace("data.table", quietly = TRUE) &&
+    requireNamespace("R.utils", quietly = TRUE)
   run <- data_dir
   metadata <- label_dir
 
