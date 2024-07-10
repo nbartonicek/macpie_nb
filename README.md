@@ -7,8 +7,8 @@
 <!-- badges: end -->
 
 The goal of macpie package is to provide the users of Mac-seq data with
-the most recent set of tools for QC, visualisation and analysis for
-this high-throughput transcriptomic platform.
+the most recent set of tools for QC, visualisation and analysis for this
+high-throughput transcriptomic platform.
 
 ## Installation
 
@@ -20,7 +20,8 @@ remotes::install_github("https://github.com/qoiopipq/macpie")
 
 ## Example
 
-This is a basic example which shows you how to import data and perform basic QC.
+This is a basic example which shows you how to import data and perform
+basic QC.
 
 ``` r
 library(macpie)
@@ -33,6 +34,4 @@ summarize_metadata(mac)
 ## plate layout
 plate_layout(mac)
 
-
 ```
-
