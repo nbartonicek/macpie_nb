@@ -13,7 +13,7 @@
 #' plate with minimum confusion.
 #' Next version will consider integration of other modalities.
 #'
-#' @param label_dir Directory containing the matching metadata file in csv format.
+#' @param label_file File containing the matching metadata in csv format.
 #' @param gene_column Specify which column of genes.tsv or features.tsv
 #' to use for gene names; default is 2
 #' @param cell_column Specify which column of barcodes.tsv
@@ -51,7 +51,7 @@ read_macseq <- function(
 ) {
 
   run <- data_dir
-  metadata <- label_dir
+  metadata <- label_file
 
   #check for existance of input files
   if (!dir.exists(paths = run)) {
